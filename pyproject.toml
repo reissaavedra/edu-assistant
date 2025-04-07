@@ -1,0 +1,66 @@
+[tool.poetry]
+name = "edu-assistant"
+version = "0.0.1"
+description = "Asistente conversacional basado en GenAI para instituciones educativas"
+authors = ["Reisson Saavedra <reisson.saavedra.miguel@gmail.com>"]
+readme = "README.md"
+package-mode = false
+include = ["app"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+pydantic = "^2.5.1"
+loguru = "^0.7.2"
+asyncpg = "^0.29.0"
+pydantic-settings = "^2.4.0"
+pandas = "^2.2.3"
+numpy = "2.0"
+requests = "^2.32.3"
+motor = "^3.7.0"
+google-generativeai = "^0.3.2"
+streamlit = "^1.32.0"
+openpyxl = "^3.1.2"
+python-dotenv = "^1.0.1"
+langchain = "^0.3.23"
+langchain-google-genai = "^2.1.2"
+langchain-core = "^0.3.51"
+nest-asyncio = "^1.6.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.semantic_release]
+branch = "release"
+build_command = "poetry build"
+upload_to_repository = false
+version_toml = "pyproject.toml:tool.poetry.version"
+
+[tool.pytest.ini_options]
+log_cli = true
+
+[tool.black]
+exclude = ""
+line-length = 88
+
+[tool.isort]
+atomic = false
+filter_files = true
+force_single_line = false
+include_trailing_comma = true
+line_length = 88
+lines_after_imports = 2
+lines_between_types = 1
+multi_line_output = 3
+skip = ""
+skip_glob = "*/setup.py"
+use_parentheses = true
+virtual_env = ""
+
+[tool.ruff]
+ignore-init-module-imports = true
+
+[tool.ruff.lint]
+extend-select = ["I"]

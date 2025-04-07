@@ -9,7 +9,7 @@
 [![LangChain](https://img.shields.io/badge/Framework-LangChain-green)](https://www.langchain.com/)
 [![Demo en vivo](https://img.shields.io/badge/demo-en%20vivo-ff69b4)](https://edu-assistant-68uftfvbrmwowsiulr74mb.streamlit.app/)
 
-**Asistente conversacional inteligente para instituciones educativas: EDU-ASSISTANT**
+**Asistente conversacional inteligente para instituciones educativas**
 
 </div>
 

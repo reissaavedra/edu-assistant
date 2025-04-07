@@ -7,12 +7,9 @@
 [![Google Gemini](https://img.shields.io/badge/AI-Google%20Gemini-orange)](https://ai.google.dev/)
 [![Streamlit](https://img.shields.io/badge/UI-Streamlit-red)](https://streamlit.io/)
 [![LangChain](https://img.shields.io/badge/Framework-LangChain-green)](https://www.langchain.com/)
+[![Demo en vivo](https://img.shields.io/badge/demo-en%20vivo-ff69b4)](https://edu-assistant-68uftfvbrmwowsiulr74mb.streamlit.app/)
 
 **Asistente conversacional inteligente para instituciones educativas: EDU-ASSISTANT**
-
-<p align="center">
-  <img src="https://github.com/reisson-saavedra/edu-assistant/raw/main/.github/images/logo.png" alt="Edu-Assistant Logo" width="400" onerror="this.style.display='none'">
-</p>
 
 </div>
 
@@ -42,6 +39,7 @@
   - [📈 Roadmap](#-roadmap)
   - [📄 Licencia](#-licencia)
   - [🚀 Despliegue en Streamlit Cloud](#-despliegue-en-streamlit-cloud)
+    - [Solución de problemas comunes](#solución-de-problemas-comunes)
 
 ## 🚀 Descripción General
 
@@ -52,6 +50,8 @@ Edu-Assistant es una plataforma de asistencia educativa impulsada por IA Generat
 - **Apoyo en el proceso de inscripción** y ventas
 
 El sistema mantiene un historial compartido entre agentes, garantizando conversaciones coherentes y contextuales que mejoran significativamente la experiencia del usuario.
+
+**[👉 Prueba la aplicación en vivo](https://edu-assistant-68uftfvbrmwowsiulr74mb.streamlit.app/)**
 
 ## ✨ Características Principales
 
@@ -69,6 +69,9 @@ El sistema mantiene un historial compartido entre agentes, garantizando conversa
 A continuación, puedes ver el asistente en acción:
 
 <div align="center">
+  <p><strong>✨ <a href="https://edu-assistant-68uftfvbrmwowsiulr74mb.streamlit.app/" target="_blank">¡Prueba la aplicación en vivo!</a> ✨</strong></p>
+  <br>
+  
   <img src="img/demo-1.png" alt="Demo de Edu-Assistant - Información de cursos" width="80%">
   <p><em>Consulta de información sobre cursos disponibles</em></p>
   
@@ -278,9 +281,7 @@ poetry run isort .
 | 1️⃣    | Interfaz Streamlit                   | ✅ Completado  |
 | 2️⃣    | Persistencia de conversaciones en DB | 🔄 En progreso |
 | 2️⃣    | Análisis de efectividad por agente   | 🔄 En progreso |
-| 3️⃣    | Integración con CRM                  | 📅 Planificado |
-| 3️⃣    | Personalización de marca             | 📅 Planificado |
-| 4️⃣    | Capacidades multimodales             | 🔮 Futuro      |
+| 3️⃣    | Capacidades multimodales             | 🔮 Futuro      |
 
 ## 📄 Licencia
 
@@ -288,7 +289,9 @@ Este proyecto está licenciado bajo la licencia MIT. Consulta el archivo `LICENS
 
 ## 🚀 Despliegue en Streamlit Cloud
 
-Para desplegar la aplicación en [Streamlit Cloud](https://streamlit.io/cloud):
+> **¡Ya disponible en vivo!** Prueba la aplicación en: [https://edu-assistant-68uftfvbrmwowsiulr74mb.streamlit.app/](https://edu-assistant-68uftfvbrmwowsiulr74mb.streamlit.app/)
+
+Para desplegar tu propia versión de la aplicación en [Streamlit Cloud](https://streamlit.io/cloud):
 
 1. **Fork o clona** este repositorio en GitHub
 

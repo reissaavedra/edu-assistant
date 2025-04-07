@@ -22,6 +22,7 @@
   - [📋 Índice](#-índice)
   - [🚀 Descripción General](#-descripción-general)
   - [✨ Características Principales](#-características-principales)
+  - [📱 Demostración](#-demostración)
   - [🏗 Arquitectura](#-arquitectura)
   - [📦 Requisitos](#-requisitos)
   - [⚙️ Instalación](#️-instalación)
@@ -62,6 +63,20 @@ El sistema mantiene un historial compartido entre agentes, garantizando conversa
 - 🔄 **Memoria compartida entre agentes** para mantener coherencia
 - 📊 **Trazabilidad completa** de todas las interacciones
 - 🔍 **Mantenimiento contextual** para conversaciones más naturales
+
+## 📱 Demostración
+
+A continuación, puedes ver el asistente en acción:
+
+<div align="center">
+  <img src="img/demo-1.png" alt="Demo de Edu-Assistant - Información de cursos" width="80%">
+  <p><em>Consulta de información sobre cursos disponibles</em></p>
+  
+  <br>
+  
+  <img src="img/demo-2.png" alt="Demo de Edu-Assistant - Recomendación profesional" width="80%">
+  <p><em>Recomendaciones personalizadas basadas en objetivos profesionales</em></p>
+</div>
 
 ## 🏗 Arquitectura
 
@@ -292,6 +307,8 @@ Para desplegar la aplicación en [Streamlit Cloud](https://streamlit.io/cloud):
 4. **Despliega la aplicación**
    - Haz clic en "Deploy"
    - Espera a que la aplicación se construya y despliegue
+
+Una vez desplegada, tu aplicación se verá similar a las imágenes de demostración mostradas [arriba](#-demostración), con una interfaz conversacional completamente funcional.
 
 ### Solución de problemas comunes
 

@@ -40,6 +40,7 @@
     - [Directrices para Contribuciones](#directrices-para-contribuciones)
   - [📈 Roadmap](#-roadmap)
   - [📄 Licencia](#-licencia)
+  - [🚀 Despliegue en Streamlit Cloud](#-despliegue-en-streamlit-cloud)
 
 ## 🚀 Descripción General
 
@@ -269,6 +270,40 @@ poetry run isort .
 ## 📄 Licencia
 
 Este proyecto está licenciado bajo la licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+
+## 🚀 Despliegue en Streamlit Cloud
+
+Para desplegar la aplicación en [Streamlit Cloud](https://streamlit.io/cloud):
+
+1. **Fork o clona** este repositorio en GitHub
+
+2. **Conecta tu repositorio** a Streamlit Cloud
+   - En el dashboard de Streamlit Cloud, haz clic en "New app"
+   - Selecciona el repositorio
+   - En "Main file path" ingresa: `ui/streamlit_app.py`
+
+3. **Configura los secretos de la aplicación**
+   - En la configuración de la app, ve a la sección "Secrets"
+   - Añade tu API key de Google Gemini:
+   ```yaml
+   GEMINI_API_KEY: "tu_api_key_de_gemini_aqui"
+   ```
+
+4. **Despliega la aplicación**
+   - Haz clic en "Deploy"
+   - Espera a que la aplicación se construya y despliegue
+
+### Solución de problemas comunes
+
+Si la aplicación falla con un error `No module named 'app'`, verifica que el archivo `ui/streamlit_app.py` incluya la línea para modificar el sys.path al inicio del archivo:
+
+```python
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+```
+
+Para más detalles sobre la configuración de Streamlit Cloud, consulta el archivo `.streamlit/README.md`.
 
 ---
 

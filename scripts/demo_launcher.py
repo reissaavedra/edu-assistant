@@ -17,7 +17,7 @@ PROJECT_ROOT = Path(__file__).parent.parent
 
 def check_environment():
     """Check that the environment is properly set up."""
-    if not settings.gemini_api_key:
+    if not settings.GEMINI_API_KEY:
         print("\n⚠️  Gemini API key not found! ⚠️")
         print(
             "Please set your GEMINI_API_KEY in the .env file or as an environment variable."

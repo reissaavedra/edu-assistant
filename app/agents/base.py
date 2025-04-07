@@ -59,9 +59,9 @@ Respuesta:"""
         try:
             # Use async_api=False to avoid gRPC asyncio issues
             self.llm = ChatGoogleGenerativeAI(
-                model=settings.gemini_model,
-                temperature=settings.gemini_temperature,
-                google_api_key=settings.gemini_api_key,
+                model=settings.GEMINI_MODEL,
+                temperature=settings.GEMINI_TEMPERATURE,
+                google_api_key=settings.GEMINI_API_KEY,
                 async_api=False,  # Use synchronous API to avoid asyncio issues
             )
 
@@ -85,7 +85,7 @@ Respuesta:"""
             )
 
             logger.info(
-                f"Successfully initialized {settings.gemini_model} for {agent_type} agent using Langchain"
+                f"Successfully initialized {settings.GEMINI_MODEL} for {agent_type} agent using Langchain"
             )
         except Exception as e:
             logger.error(f"Error configuring Langchain with Gemini API: {e}")
@@ -320,7 +320,7 @@ Respuesta:"""
                 "text": text_response,
                 "agent_type": self.agent_type,
                 "processing_time": elapsed_time,
-                "model_name": settings.gemini_model,
+                "model_name": settings.GEMINI_MODEL,
                 "tokens_used": None,
             }
 

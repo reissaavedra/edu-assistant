@@ -5,7 +5,12 @@ This module provides a web interface for the educational assistant using Streaml
 """
 
 import os
+import sys
 from typing import Dict
+
+# Add the project root directory to Python's path to allow imports from 'app'
+# This is needed for deployment in Streamlit Cloud
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 import nest_asyncio
 import streamlit as st

@@ -34,7 +34,23 @@ class KnowledgeBase:
         Args:
             file_path: Path to the Excel file. Defaults to the path in settings.
         """
-        self.file_path = file_path or settings.knowledge_base_path
+        # Asegurar que el file_path es un objeto Path
+        if file_path is None and hasattr(settings, "knowledge_base_path"):
+            self.file_path = settings.knowledge_base_path
+        elif file_path is not None:
+            self.file_path = Path(file_path)
+        else:
+            # Fallback a una ubicación por defecto
+            default_path = (
+                Path(__file__).parent.parent.parent
+                / "data"
+                / "knowledge_base_Caso.xlsx"
+            )
+            logger.warning(
+                f"No knowledge_base_path in settings, using default: {default_path}"
+            )
+            self.file_path = default_path
+
         self._data: Optional[pd.DataFrame] = None
         self._loaded = False
 
